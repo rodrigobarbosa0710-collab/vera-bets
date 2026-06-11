@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚽ Vera Bets - Copa 2026
 
-## Getting Started
+Sistema de bolão para a Copa do Mundo 2026. Compartilhe com seus amigos e colegas de trabalho!
 
-First, run the development server:
+🔗 **Link ao vivo**: https://vera-bets.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Configuração Rápida
+
+### 1. Criar conta no Supabase (GRATUITO)
+
+1. Acesse https://supabase.com
+2. Clique em "Sign Up" e crie conta com GitHub
+3. Crie um novo projeto chamado "vera-bets"
+
+### 2. Copiar Credenciais
+
+No painel do Supabase:
+1. Vá para **Settings** → **API**
+2. Copie:
+   - **Project URL** (começa com `https://...`)
+   - **anon public** (a chave API)
+
+### 3. Configurar Banco de Dados
+
+No **SQL Editor** do Supabase, cole e execute o arquivo SETUP_BANCO_DE_DADOS.md
+
+### 4. Criar arquivo `.env.local`
+
+Na raiz do projeto, crie o arquivo `.env.local`:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://seu-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua-chave-publica-aqui
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Fazer Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git add .
+git commit -m "Add Supabase configuration"
+git push
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O Vercel fará deploy automaticamente!
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📊 Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Registro de Jogadores
+✅ 50+ Jogos da Copa (todas as fases)
+✅ Sistema de Pontuação (5 pts/acerto)
+✅ Ranking em Tempo Real
+✅ Controle de Pagamentos
+✅ Dados Persistentes (Banco de Dados)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Divirta-se! ⚽🎉**
